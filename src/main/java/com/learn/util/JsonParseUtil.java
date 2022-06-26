@@ -22,10 +22,11 @@ public class JsonParseUtil {
 	private JSONObject prepareJsonObj(JSONObject josnObject, String path, Object value) {
 		List<String> pathList = Arrays.asList(path.split("\\."));
 		JSONObject innerNode = josnObject;
+		JSONObject jsonElement;
 
 		for (int i = 0; i < pathList.size() - 1; i++) {
 			if (!innerNode.has(pathList.get(i))) {
-				JSONObject jsonElement = new JSONObject();
+				jsonElement = new JSONObject();
 				innerNode.put(pathList.get(i), jsonElement);
 				innerNode = jsonElement;
 			} else {
