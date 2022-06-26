@@ -1,0 +1,16 @@
+{
+  "userName": "USER_NAME",
+  "userID": "USER_ID",
+  "userCompany": {
+    "companyId": "COMPANY_ID",
+    "companyName": "COMPANY_NAME",
+    "companyDetails": {
+      "companyAddress2": "COMPANY_ADDRESS_2",
+      "companyAddress1": "COMPANY_ADDRESS_1",
+      "companyPosition": {
+        "latitude": "54.60",
+        "longitude": "89.70"
+      }
+    }
+  }
+}
